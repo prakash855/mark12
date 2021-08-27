@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap"
+    rel="stylesheet"
+  />
+  <body>
+    <header class="header">
+      <h1>Fun with triangles</h1>
+      <nav class="nav">
+        <a class="links" href="index.html">is Triangle?</a>
+        <a class="links" href="quiz.html">Quiz</a>
+        <a class="links" href="hypotenuse.html">Hypotenuse</a>
+        <a class="links" href="area.html">Area</a>
+      </nav>
+    </header>
+    <div class="content">
+      <h1>Triangle Quiz</h1>
+      <form class="quiz_form">
+        <div class="question_container">
+          <p>
+            What is the third angle for the triangle where angle1 = 45° and
+            angle2 = 45°?
+          </p>
+          <label><input type="radio" name="question1" value="45°" />45°</label>
+          <label><input type="radio" name="question1" value="60°" />60°</label>
+          <label><input type="radio" name="question1" value="90°" />90°</label>
+        </div>
+        <div class="question_container">
+          <p>If the triangle has an angle of 90°, What is it called?</p>
+          <label
+            ><input type="radio" name="question2" value="Obtuse" />Obtuse</label
+          >
+          <label
+            ><input type="radio" name="question2" value="Acute" />Acute</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="question2"
+              value="Right-Angle"
+            />Right-Angle</label
+          >
+        </div>
+      </form>
+      <button id="submit_answer_btn">SubmitAnswers</button>
+      <div id="outputRadio"></div>
+    </div>
+    <script src="quiz.js"></script>
+  </body>
+</html>
