@@ -1,14 +1,13 @@
 * {
   font-family: "Hina Mincho", serif;
 }
+body {
+  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+}
 
 .content {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid;
   text-align: center;
-  justify-content: center;
-  padding: 5rem 20rem;
+  margin-top: 8rem;
 }
 .inputs,
 .angle-input,
@@ -18,7 +17,7 @@
   margin-bottom: 1rem;
   border-radius: 10px;
   border: 1px solid;
-  padding-left: 2rem;
+  padding-left: 1rem;
 }
 
 #btn,
@@ -26,11 +25,11 @@
 #submit_answer_btn,
 #is_triangle {
   background: transparent;
+  cursor: pointer;
   height: 2rem;
-  text-align: center;
   outline: none;
+  min-width: 10%;
   border: 1px solid;
-  margin: 0 10rem;
   margin-top: 1rem;
   border-radius: 10px;
 }
@@ -53,4 +52,24 @@
   font-size: 1.2rem;
   color: white;
   text-decoration: none;
+}
+.footer {
+  text-align: center;
+}
+.lists {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+.list {
+  border: 2px solid lightblue;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  margin: 0 1rem;
+}
+.foot{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
