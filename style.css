@@ -79,7 +79,7 @@ body {
 .intro{
   position: absolute;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   bottom: 0;
   right: 1rem;
   font-weight: 600;
