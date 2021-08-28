@@ -67,9 +67,24 @@ body {
   height: 4rem;
   border-radius: 50%;
   margin: 0 1rem;
+  cursor: pointer;
 }
 .foot{
   position: absolute;
   bottom: 0;
+  left: -20px;
   width: 100%;
+}
+.intro{
+  position: absolute;
+  display: flex;
+  align-items: flex-end;
+  bottom: 0;
+  right: 1rem;
+  font-weight: 600;
+}
+@media (max-width:670px){
+  .intro{
+    display: none;
+  }
 }
