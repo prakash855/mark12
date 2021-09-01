@@ -4,7 +4,7 @@ const thirdSide = document.querySelector("#third-side");
 const calculate = document.querySelector("#calculate-area");
 const output = document.querySelector("#output");
 
-function calculateArea(e) {
+function calculateAreaOfTriangle(e) {
   e.preventDefault();
 
   const firstSideValue = Number(firstSide.value);
@@ -31,4 +31,4 @@ function calculateArea(e) {
   }
 }
 
-calculate.addEventListener("submit", calculateArea);
+calculate.addEventListener("submit", calculateAreaOfTriangle);
