@@ -25,13 +25,22 @@
     </header>
     <div class="content">
       <h1>Check area of Triangle</h1>
-      <h2>Area of triangle is = 1/2(Base * Height)</h2>
-      <label>Base(in cm)</label>
-      <input placeholder="Enter the number" class="inputs" type="number" />
-      <label>Height(in cm)</label>
-      <input placeholder="Enter the number" class="inputs" type="number" />
-      <button id="btn">Check area</button>
-      <h2 id="outputArea"></h2>
+      <form id="calculate-area">
+        <label class="input-label" for="first-side">
+          <p>Enter first side of a triangle</p>
+          <input class="inputs" required type="number" id="first-side" />
+        </label>
+        <label class="input-label" for="second-side">
+          <p>Enter second side of a triangle</p>
+          <input class="inputs" required type="number" id="second-side" />
+        </label>
+        <label class="input-label" for="third-side">
+          <p>Enter third side of a triangle</p>
+          <input class="inputs" required type="number" id="third-side" />
+        </label>
+        <button class="btn" type="submit">Calculate</button>
+        <p class="output calculate-area-output" id="output"></p>
+      </form>
     </div>
     <footer class="footer">
       <div class="foot">
